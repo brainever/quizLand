@@ -12,7 +12,6 @@ class ResultScreen extends StatefulWidget {
 class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
-    // Color secondColor = Colors.blue;
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(

@@ -4,7 +4,7 @@ import 'package:quiz_app/screens/result_screen.dart';
 
 class HomePage extends StatefulWidget {
   final String name;
-   const HomePage({Key? key,required this.name}) : super(key: key);
+  const HomePage({Key? key, required this.name}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -16,21 +16,18 @@ class _HomePageState extends State<HomePage> {
   final PageController? _controller = PageController(initialPage: 0);
   bool isPressed = false;
   Color isTrue = Colors.green;
-  Color isWrong = Colors.red;
+  Color isFalse = Colors.red;
   Color btnColor = Colors.white;
   int score = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /* appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0.0,
-      ),*/
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('lib/img/back_compre.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('lib/img/back_compre.jpg'),
+                fit: BoxFit.cover)),
         child: Padding(
           padding: const EdgeInsets.all(18.0),
           child: Column(
@@ -46,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                       bottomRight: Radius.circular(30)),
                 ),
                 child: Text(
-                (widget.name),
+                  (widget.name),
                   style: const TextStyle(
                       color: Color(0xFF334B49),
                       fontWeight: FontWeight.w800,
@@ -79,9 +76,6 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              //const SizedBox(height: 30.0),
-                              //width: double.infinity,
-                              //height: 18.0,
                               Text(
                                 "Domanda ${index + 1}/${questions.length}",
                                 style: const TextStyle(
@@ -125,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                                                   .toList()[i]
                                                   .value
                                               ? isTrue
-                                              : isWrong
+                                              : isFalse
                                           : const Color(0xFF17b2aa),
                                       onPressed: isPressed
                                           ? () {}
@@ -182,11 +176,6 @@ class _HomePageState extends State<HomePage> {
                                                   });
                                                 }
                                           : null,
-                                      /* style: OutlinedButton.styleFrom(
-                                        //shape: StadiumBorder(12),
-                                        side: const BorderSide(
-                                            color: Colors.blue, width: 2.0),
-                                      ),*/
                                       child: Text(
                                         index + 1 == questions.length
                                             ? "Vedi risultato"
