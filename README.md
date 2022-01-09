@@ -1,16 +1,11 @@
-# quiz_app
 
-A new Flutter project.
+## I dati
+- Nome : Brahim
+- Cognome : EL HANNAOUI
+- Matricola : 315597
 
-## Getting Started
+# QuizLand
+L'app QuizLand contiene un totale di tre schermate, la schermata iniziale in cui un utente inserisce il nome per poter accedere alla schermata principale dov'è si trovano le domande. Nella schermata del punteggio finale dove si può controllare il punteggio e ripetere il Quiz.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Demo
+![alt text](https://live.staticflickr.com/65535/51809566418_fe478f1e02_h.jpg)
